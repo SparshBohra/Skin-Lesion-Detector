@@ -9,3 +9,6 @@ A web application built using Python (Django) that classifies 6 different types 
   -  Melanoma (mel)
   
 The data used is from the Skin Cancer MNIST: HAM10000 28_28_RGB dataset from kaggle. [https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000] The model is built in Keras, a popular python framework and uses a Convolutional Neural Network. This web application is only the first version, with scope for further improvement.
+
+**User Interface for v1.0:**
+![skin-lesion-detector UI](https://user-images.githubusercontent.com/53478586/105143621-18526200-5b22-11eb-8039-88a76a690151.png)
