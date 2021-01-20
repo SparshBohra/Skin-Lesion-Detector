@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<title>Skin Lesion Classifier</title>
+
+    	<link href="../static/css/form-upload.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<style>
+			body {
+  				background-image: url('https://www.wchcd.org/wp-content/uploads/2014/04/healthcare-background.jpg');
+			}
+		</style>
+	</head>
+
+  	<body class="text-center">
+    	<div class="form-upload" style="margin-top: 5%;">
+			<form enctype="multipart/form-data" action="predictImage" method="post" class="form-upload">
+				{% csrf_token %}
+
+				<img class="mb-4" src="https://cdn4.iconfinder.com/data/icons/artificial-intelligence-64/512/ai-healthcare-artificial-intelligence-512.png" width="80" height="80">
+	      		<h1 class="h3 mb-3 font-weight-normal"><b>Upload the Image to Classify</b></h1>
+
+                <div class="uploadImage" style="padding:10px;" align="center">
+                    <input type="file" name="filePath" id="image" style="width:25%; height:40px; padding:5px;" class="form-control file-block" required autofocus>
+        			<button class="btn btn-lg btn-primary btn-block" style="width:25%; height:50px; padding:5px;" type="submit">Predict</button>
+                </div>
+
+				<br>
+                <img src={{filePathName}} alt='imagename' width="400" height="300">
+                <br> <br>
+
+                <h3 class="h3 mb-3 font-weight-normal">Type of Skin Lesion: <b>{{predictedLabel}}</b></h3>
+	    	</form>
+    	</div>
+  	</body>
+</html>

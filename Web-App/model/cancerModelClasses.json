@@ -1,0 +1,23 @@
+{
+    "0":[
+        "Actinic Keratoses and Intraepithelial Carcinoma / Bowen's Disease (akiec)"
+    ],
+    "1":[
+        "Basal Cell Carcinoma (bcc)"
+    ],
+    "2":[
+        "Benign Keratosis-like Lesions (solar lentigines / seborrheic keratoses and lichen-planus like keratoses, bkl)"
+    ],
+    "3":[
+        "Dermatofibroma (df)"
+    ],
+    "4":[
+        "Melanocytic Nevi (nv)"
+    ],
+    "5":[
+        "Vascular Lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage, vasc)"
+    ],
+    "6":[
+        "Melanoma (mel)"
+    ]
+}
