@@ -1,5 +1,5 @@
 # Skin-Lesion-Detector
-A web application built using Python (Django) that classifies 6 different types of Skin Cancers:
+A web application built using Python (Django) that classifies 7 different types of Skin Cancers:
   - Actinic Keratoses and Intraepithelial Carcinoma / Bowen's Disease (akiec)
   - Basal Cell Carcinoma (bcc)
   -  Benign Keratosis-like Lesions (solar lentigines / seborrheic keratoses and lichen-planus like keratoses, bkl)
